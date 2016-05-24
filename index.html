@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome.css" type="text/css">
   <!--include ui bootstrap and angular from the local bower repo-->
+  <script src="./bower_components/angular/angular.js"></script>
   <script src="./bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+  <!--stuff loaded from the web(for now)-->
   <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
@@ -35,6 +37,14 @@
       color: #111;
   }
   */
+
+  /* this could be an awfull way of doing this however, we must try it! */
+  .felxableSizedViewBox{
+
+    height: 50%;
+    width: 100%;
+
+  }
 
   .worldmapbackground {
     background-image: url("./img/background.jpg");
@@ -216,7 +226,7 @@
   </div>
 </nav>
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="myCarousel" class="carousel slide felxableSizedViewBox" data-ride="carousel">
 
     <!--div that goes over carousel on the top -->
   <!-- <div id="sensei_tutors">
@@ -235,7 +245,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="./img/carousel/sensei01.jpg" alt="Chania">
+        <img src="./img/carousel/sensei01.jpg" alt="Chania" class="img-responsive">
         <div class="carousel-caption">
             <h1>Why You Should Join Us</h1>
             <h4>Sensei Tutors provide you the most wonderful tutoring community.</h4>
@@ -244,7 +254,7 @@
       </div>
 
       <div class="item">
-        <img class="carousel-image" src="./img/carousel/sensei02.jpg" alt="Chania">
+        <img class="carousel-image" src="./img/carousel/sensei02.jpg" alt="Chania" class="img-responsive">
         <div class="carousel-caption">
             <h1>Build a Network</h1>
             <h4>Build a network of educators!</h4>
@@ -253,7 +263,7 @@
       </div>
 
       <div class="item">
-        <img class="carousel-image" src="./img/carousel/sensei03.jpg" alt="Flower">
+        <img class="carousel-image" src="./img/carousel/sensei03.jpg" alt="Flower" class="img-responsive">
         <div class="carousel-caption">
             <h1>Competitive Pay</h1>
             <h4>Filling the untap tutor market.</h4>
@@ -407,12 +417,12 @@
           <!--email-->
 
         </form>
-      </div>
 
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
 
+      </div>
     </div>
   </div>
 </div>
